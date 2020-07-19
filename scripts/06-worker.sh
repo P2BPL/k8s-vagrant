@@ -122,7 +122,7 @@ sudo mkdir -p \
 #TODO# Add logic to retrieve versions from common place #
 #TODO# Add logic to download version from GIT_BASE_URL of Vagrant file
 echo "GIT_BASE_URL - ${1}"
-wget -q ${1}/VERSIONS
+wget -q https://raw.githubusercontent.com/P2BPL/k8s-vagrant/master/scripts/VERSIONS
 source VERSIONS
 
 {
